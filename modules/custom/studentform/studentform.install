@@ -1,0 +1,68 @@
+<?php
+
+use Drupal\Core\Database\Database;
+ 
+/**
+ * Implements hook_schema().
+ */
+function studentform_schema(){
+
+    $schema['students'] = array(
+        'description' => 'The table for storing the students data.',
+        'fields' => array(
+            'id'    => array(
+                'description' => 'The primary identifier for student',
+                'type' => 'serial',
+                'not null' => TRUE,
+                'unsigned' => TRUE,
+            ),
+            'name' => array(
+                'description' => 'Student name',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'address' => array(
+                'description' => 'Student address',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'email' => array(
+                'description' => 'Student email',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'phone_number' => array(
+                'description' => 'Student phone number',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'date_of_birth' => array(
+                'description' => 'Student date of birth',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+            'gender' => array(
+                'description' => 'Student gender',
+                'type' => 'varchar',
+                'length' => 255,
+                'not null' => TRUE,
+                'default' => '',
+            ),
+        ),
+        'primary key' => array('id'),
+    );
+
+    return $schema;
+
+
+}

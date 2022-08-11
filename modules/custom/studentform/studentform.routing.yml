@@ -1,0 +1,7 @@
+student_form.form:
+  path: '/studentform'
+  defaults:
+    _form: 'Drupal\studentform\Form\ExampleForm'
+    _title: 'Welcome to the student Registration Form.'
+  requirements:
+    _permission: 'access content'

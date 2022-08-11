@@ -1,0 +1,4 @@
+name: Student Form
+description: Student Custom Form
+type: module
+core_version_requirement: 9.x

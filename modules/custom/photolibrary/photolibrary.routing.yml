@@ -1,0 +1,7 @@
+photolibary.content:
+  path: '/photo-libary' 
+  defaults: 
+    _controller: '\Drupal\photolibrary\Controller\PhotoLibraryController::content' 
+    _title: 'Photo libary'
+  requirements: 
+    _permission: 'access content' 
